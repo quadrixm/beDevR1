@@ -16,11 +16,11 @@ export class User {
 	fullName: string;
 
 	@Column()
-	phoneNumber: string;
+	phoneNumber?: string;
 
 	@Column()
 	emailId: string;
 
 	@OneToMany(type => Order, order => order.user)
-	orders: Order[];
+	orders?: Order[];
 }

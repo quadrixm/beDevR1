@@ -9,6 +9,7 @@ import { UsersModule } from './user/users.module';
 import { OrdersModule } from './order/orders.module';
 import { ItemsModule } from './item/items.module';
 import { Order } from './order/order.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
 	imports: [
@@ -30,6 +31,7 @@ import { Order } from './order/order.entity';
 		UsersModule,
 		OrdersModule,
 		ItemsModule,
+		AuthModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],
